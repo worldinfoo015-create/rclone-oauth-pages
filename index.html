@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Information about a personal rclone desktop setup for accessing the owner's Google Drive.">
+  <title>Rclone Personal Drive | Personal Desktop Access</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+    body { margin: 0; color: #172437; background: #f5f8fc; line-height: 1.65; }
+    main { max-width: 800px; margin: 7vh auto; padding: 40px; background: #fff; border: 1px solid #e1e8f0; border-radius: 18px; box-shadow: 0 12px 36px #162a4510; }
+    .eyebrow { color: #265da9; letter-spacing: .12em; text-transform: uppercase; font-size: 12px; font-weight: 700; }
+    h1 { font-size: clamp(29px, 5vw, 44px); line-height: 1.2; margin: 12px 0 18px; }
+    h2 { margin-top: 32px; font-size: 21px; }
+    a { color: #225ab3; }
+    nav { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 35px; padding-top: 20px; border-top: 1px solid #e1e8f0; }
+    .notice { background: #f0f5ff; padding: 15px 18px; border-left: 4px solid #477be0; border-radius: 7px; }
+    @media(max-width:700px) { main { margin: 20px 12px; padding: 24px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">Personal desktop integration</div>
+    <h1>Rclone Personal Drive</h1>
+    <p>This page describes a personal, owner-operated configuration of <a href="https://rclone.org/">rclone</a> for accessing the owner's Google Drive from a Windows computer.</p>
+    <p>The purpose is to mount the owner's Google Drive as a local virtual drive, so they can browse, open, upload, and manage their own files using the Google Drive API.</p>
+    <h2>How access works</h2>
+    <p>Google OAuth is used to authorize the locally installed rclone application. The requested Google Drive permission can allow the owner to view, create, modify, move, and delete files through rclone. Authorization is performed by the owner, and the resulting credentials are stored locally in the rclone configuration, not on this website.</p>
+    <p class="notice">This is an informational site for a personal desktop setup. There is no public registration, hosted file-processing service, or online account dashboard.</p>
+    <h2>Data and privacy</h2>
+    <p>File operations take place between the owner's computer and Google Drive. Local caching may be used by rclone. Please read the <a href="privacy.html">Privacy Policy</a> for information about Google user data and authentication.</p>
+    <nav aria-label="Site links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="https://github.com/worldinfoo015-create/rclone-oauth-pages">Public information repository</a>
+    </nav>
+  </main>
+</body>
+</html>
